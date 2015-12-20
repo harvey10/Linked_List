@@ -1,0 +1,76 @@
+In file included from linked_list.cpp:1:0:
+linked_list.h:1:9: error: macro names must be identifiers
+ #ifndef "linked_list_h"
+         ^
+linked_list.h:1:0: error: unterminated #ifndef
+ #ifndef "linked_list_h"
+ ^
+linked_list.cpp:6:6: error: ‘linkedList’ has not been declared
+ void linkedList::addToListEnd(const int idEntered, const string infoEntered) {
+      ^
+linked_list.cpp: In function ‘void addToListEnd(int, std::string)’:
+linked_list.cpp:7:3: error: ‘Node’ was not declared in this scope
+   Node *newNode;
+   ^
+linked_list.cpp:7:9: error: ‘newNode’ was not declared in this scope
+   Node *newNode;
+         ^
+linked_list.cpp:8:17: error: ‘Node’ does not name a type
+   newNode = new Node;
+                 ^
+linked_list.cpp:12:3: error: ‘last’ was not declared in this scope
+   last->next = newNode;
+   ^
+linked_list.cpp: At global scope:
+linked_list.cpp:16:6: error: ‘linkedList’ has not been declared
+ void linkedList::removeFromList(const int idEntered) {
+      ^
+linked_list.cpp: In function ‘void removeFromList(int)’:
+linked_list.cpp:17:3: error: ‘Node’ was not declared in this scope
+   Node *current;
+   ^
+linked_list.cpp:17:9: error: ‘current’ was not declared in this scope
+   Node *current;
+         ^
+linked_list.cpp:18:9: error: ‘trailCurrent’ was not declared in this scope
+   Node *trailCurrent;
+         ^
+linked_list.cpp:19:13: error: ‘first’ was not declared in this scope
+   current = first;
+             ^
+linked_list.cpp:32:12: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+     delete trailCurrent;
+            ^
+linked_list.cpp:34:23: error: ‘last’ was not declared in this scope
+   else if (current == last) {
+                       ^
+linked_list.cpp:37:12: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+     delete trailCurrent;
+            ^
+linked_list.cpp:41:12: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+     delete current;
+            ^
+linked_list.cpp: At global scope:
+linked_list.cpp:45:6: error: ‘linkedList’ has not been declared
+ void linkedList::printList() {
+      ^
+linked_list.cpp: In function ‘void printList()’:
+linked_list.cpp:46:3: error: ‘Node’ was not declared in this scope
+   Node *current;
+   ^
+linked_list.cpp:46:9: error: ‘current’ was not declared in this scope
+   Node *current;
+         ^
+linked_list.cpp:47:13: error: ‘first’ was not declared in this scope
+   current = first;
+             ^
+linked_list.cpp:49:17: error: ‘setw’ was not declared in this scope
+   cout << setw(5) << "ID" << "Info" << endl;
+                 ^
+linked_list.cpp: At global scope:
+linked_list.cpp:56:1: error: ‘linkedList’ does not name a type
+ linkedList::linkedList() {
+ ^
+linked_list.cpp:62:1: error: ‘linkedList’ does not name a type
+ linkedList::~linkedList() {
+ ^
