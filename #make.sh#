@@ -1,0 +1,5 @@
+!#/bin/bash
+echo -e "Please enter the class file to be linked with main"
+read FILE
+if [ -e $FILE.cpp]; then
+    g++ -Wall -Wextra
