@@ -1,2 +1,2 @@
-# Linked_List
+# Linked List
 Generic Linked List
